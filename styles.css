@@ -1,0 +1,225 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #F3F5FC;
+    margin: 20px;
+}
+.contenedor{
+    display: flex;
+}
+.part1{
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.part2{
+    min-width: 250px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    height: calc(100vh - 40px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conten3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 64%;
+}
+h3{
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+h4{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 300;
+}
+button{
+    cursor: pointer;
+}
+.boton{
+    width: 200px;
+    border-radius: 24px;
+    height: 40px;
+    border: none;
+    font-family: 'Inter';
+    font-weight: bold;
+    background: #0A3871;
+    color: white;
+}
+.conten3 span:not(.material-symbols-outlined){
+    text-align: start;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+.conten3 .material-symbols-outlined{
+    font-size: 1rem;
+}
+.boton-outle{
+    width: 200px;
+    border-radius: 24px;
+    height: 40px;
+    border: 2px solid #0A3871;
+    font-family: 'Inter';
+    font-weight: bold;
+    background: white;
+    color: #0A3871;
+}
+.info{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.botones{
+    padding-top: 10px;
+}
+
+/* TEXT AREA */
+#input-text {
+    background: #F3F5FC;
+    border: none;
+    outline: none; /* Esto es para quitar el borde cuando el textarea está enfocado */
+    font-size: 24px; /* Tamaño del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 100%;
+    box-sizing: border-box; /* Para que el padding se incluya en el tamaño total */
+}
+
+#input-text::placeholder {
+    color: #0A3871; /* Color del placeholder */
+    font-size: 24px; /* Tamaño del placeholder */
+    font-family: 'Inter';
+    font-weight: 450;
+}
+
+.conten2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64%;
+}
+.content-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#encrypted-text{
+    padding-bottom: 10px;
+    max-width: 400px;
+    overflow-y: scroll;
+}
+#copy-button{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+#flex-v{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    padding: 30px 5px;
+    overflow: hidden;
+}
+#flex-v span:not(.material-symbols-outlined){
+    color: #0A3871; 
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 450;
+}
+
+#ocult{
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.desarrollo{
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    font-size: 0.8rem;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-top: 0%;
+    text-decoration: none;
+
+
+}
+
+@media (max-width: 950px) {
+    .part1{
+        width: 100%;
+    }
+    .contenedor {
+        width: 100%;
+        flex-direction: column;
+    }
+    .botones{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .part2 #ocult img{
+          display: none ;
+    }
+    .part2{
+        padding: 20px;
+        height: 100% !important;
+    }
+    #flex-v{
+        /* display: none; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+        height: 100%;
+        padding: 30px 5px;
+        width: 100%;
+        max-width: 400px;
+        overflow-y: scroll;
+    }
+}
+@media (max-width: 450px) {
+    .part1{
+        width: none;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .content-center{
+        display: block;
+        width: 89%;
+    }
+    .conten2{
+        width: 100%;
+    }
+    .conten3{
+        width: 100%;
+    }
+    .boton,.boton-outle{
+        width: 100%;
+    }
+}
+

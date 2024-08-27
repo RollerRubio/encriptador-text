@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="part1">
+            <div class="conten1">
+                <img src="assets/img1-letra-a.svg" alt="">
+            </div>
+            <div class="content-center">
+                <div class="conten2">
+                    <textarea id="input-text" name="" rows="10" id="" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="conten3">
+                    <div class="info">
+                        <span class="material-symbols-outlined">
+                            info
+                        </span>
+                        <span>Solo letras minúsculas y sin acentos</span>
+                    </div>
+                    <div class="botones">
+                        <button id="encrypt-button" class="boton"> Encriptar </button>
+                        <button id="decrypt-button" class="boton-outle"> Desencriptar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part2">
+            <div id="flex-v">
+                <span id="encrypted-text" class="result-text"></span>
+                <p id="no-message" class="no-message" style="display: none;"></p>
+                <p id="invalid-input" class="no-message" style="display: none;"></p>
+                <button id="copy-button" class="boton-outle"> Copiar </button>
+            </div>
+            <div id="ocult">
+                <img src="assets/img2-persona.svg" alt="" width="250px">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a class="desarrollo" target="_blank" href="https://www.linkedin.com/in/rollerrubio">Roller Rubio Ramos (2024)</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
